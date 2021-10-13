@@ -14,7 +14,6 @@ header {
     height: 500px;
     background-image: url('../images-godot/background.jpg');
     background-position: top;
-    /* (136, 153, 187) */
 }
 
 nav .navbar-collapse {
@@ -37,7 +36,6 @@ nav a:hover {
 }
 
 .become-a-patreon {
-    background: #db604e;
     padding: 0.2rem 0.4rem;
     height: 100%;
     display: flex;
@@ -46,12 +44,7 @@ nav a:hover {
     font-size: 14px;
 }
 
-.become-a-patreon .percentage {
-    background: black;
-}
 .become-a-patreon .percentage span {
-    color: #db604e;
-    background: white;
     padding-left: 1.5rem;
     padding-right: 0.2rem;
 }
@@ -67,19 +60,12 @@ nav a:hover {
     font-size: medium;
 }
 .text-more {
-    color: rgb(116, 181, 216);
     font-weight: bold;
     font-size: large;
 }
 
 section article {
     max-width: 1200px;
-}
-section:nth-child(even) {
-    background: rgb(29, 36,68);
-}
-section:nth-child(odd) {
-    background: rgb(28, 30, 32);
 }
 section:nth-child(even) article p {
     color: rgb(136, 153, 187);
@@ -97,8 +83,6 @@ section:nth-child(even) article p.title {
     border-radius: 0;
     border: none;
     background: transparent;
-    /* background: rgb(41, 62, 78); */
-    /* (38, 47, 82) */
 }
 .card img {
     border-radius: 0;
@@ -111,10 +95,6 @@ section:nth-child(even) article p.title {
 }
 .card .card-body:last-child a {
     text-decoration: none !important;
-}
-.card-news {
-    background: rgb(39, 40, 43);
-    color: white;
 }
 .card-news .list-group-item {
     background: transparent;
@@ -141,10 +121,8 @@ section:nth-child(even) article p.title {
 }
 .img-sponsored {
     height: 80px;
-    background: rgb(39, 40, 43);
 }
 footer {
-    background: rgb(39, 40, 43);
     padding: 2rem 5rem;
     color: #cacaca;
 }
@@ -153,8 +131,4 @@ footer .contact-us {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-footer .contact-us h3 {
-    color: white;
 }
