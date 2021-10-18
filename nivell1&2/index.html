@@ -1,21 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Nivell 1</title>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
-    </head>
-    <body>
-        <p class="text-primary">.text-primary</p>
-        <p class="text-secondary">.text-secondary</p>
-        <p class="text-success">.text-success</p>
-        <p class="text-danger">.text-danger</p>
-        <p class="text-warning">.text-warning</p>
-        <p class="text-info">.text-info</p>
-        <p class="text-light bg-dark">.text-light</p>
-        <p class="text-dark">.text-dark</p>
-        <p class="text-muted">.text-muted</p>
-        <p class="text-white bg-dark">.text-white</p>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nivell 1</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo-a.png" alt="logo A" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">CV</a>
+            <button class="mx-2 btn-outline-primary" data-bs-toggle="modal" data-bs-target="#myModalRegistre">Registre</button>
+            <button class="btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myModalLogin">Login</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-3 mb-3">
+      <div class="row">
+        <div class="col">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/1.JPG" class="d-block w-100" alt="Image 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/2.JPG" class="d-block w-100" alt="Image 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/3.JPG" class="d-block w-100" alt="Image 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/4.JPG" class="d-block w-100" alt="Image 4" />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-secondary">
+      <div class="container p-3 py-5">
+        <div class="row text-danger">
+          <div class="col-md-6 col-sm-12">CURSOS PENDIENTES:</div>
+          <div class="col-md-2 col-sm-4">VUE</div>
+          <div class="col-md-2 col-sm-4">JAVA</div>
+          <div class="col-md-2 col-sm-4">PYTHON</div>
+        </div>
+        <div class="row text-success">
+          <div class="col-md-6 col-sm-12">CURSOS REALIZADOS:</div>
+          <div class="col-md-2 col-sm-4">HTML</div>
+          <div class="col-md-2 col-sm-4">ANGULAR</div>
+          <div class="col-md-2 col-sm-4">REACT</div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white">
+      <div class="row container-color-text p-3">
+        <div class="col-md-6 col-sm-12">
+          <p class="text-primary">.text-primary</p>
+          <p class="text-secondary">.text-secondary</p>
+          <p class="text-success">.text-success</p>
+          <p class="text-danger">.text-danger</p>
+          <p class="text-warning">.text-warning</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <p class="text-info">.text-info</p>
+          <p class="text-light bg-dark">.text-light</p>
+          <p class="text-dark">.text-dark</p>
+          <p class="text-muted">.text-muted</p>
+          <p class="text-white bg-dark">.text-white</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="myModalRegistre" aria-labelledby="myModalRegistre" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal Registre</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal Registre</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" tabindex="-1" id="myModalLogin" aria-labelledby="myModalLogin" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal Login.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+var myModalRegistre = document.getElementById('myModalRegistre')
+var myInputRegistre = document.getElementById('myInputRegistre')
+
+var myModalLogin = document.getElementById('myModalLogin')
+var myInputLogin = document.getElementById('myInputLogin')
+
+myModalRegistre.addEventListener('shown.bs.modal', function () {
+    myInputRegistre.focus()
+})
+myModalLogin.addEventListener('shown.bs.modal', function () {
+    myInputLogin.focus()
+})
+    </script>
+  </body>
 </html>
