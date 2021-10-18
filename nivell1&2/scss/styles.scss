@@ -1,0 +1,25 @@
+// COLORES
+$primary:       #db604e;
+$secondary:     #4ecbdb;
+$terciary:      rgb(28, 30, 32);
+$success:       #335C67;
+$info:          rgb(116, 181, 216);
+$warning:       #E09F3E;
+$danger:        red;
+$light:         rgb(136, 153, 187);
+$dark:          rgb(39, 40, 43) ;
+
+@import "../node_modules/bootstrap-scss/bootstrap";
+// @import "../bootstrap/scss/bootstrap";
+
+body {
+    .navbar-brand {
+        img {
+            width: 50px;
+        }
+    }
+    .container-color-text {
+        max-width: 950px;
+        margin: auto;
+    }
+}
